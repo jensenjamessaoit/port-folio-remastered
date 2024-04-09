@@ -1,17 +1,7 @@
-import { Routes, Route } from "react-router-dom";
-
-// components
-// pages
-import Home from "./pages/Home";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </>
-  );
+  return <Outlet />;
 }
 
 export default App;
